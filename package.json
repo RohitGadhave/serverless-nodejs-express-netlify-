@@ -1,0 +1,28 @@
+{
+  "name": "serverless-nodejs-express-netlify-",
+  "version": "1.0.0",
+  "description": "Boilerplate for  Node.js express project prepared for netlify serverless",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "/node_modules/.bin/netlify-lambda build src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohitGadhave/serverless-nodejs-express-netlify-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohitGadhave/serverless-nodejs-express-netlify-/issues"
+  },
+  "homepage": "https://github.com/RohitGadhave/serverless-nodejs-express-netlify-#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.14",
+    "serverless-http": "^2.7.0"
+  }
+}
