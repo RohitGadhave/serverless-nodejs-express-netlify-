@@ -1,9 +1,15 @@
+# Settings in the [build] context are global and are applied to all contexts
+# unless otherwise overridden by more specific contexts.
 [build]
-  base = "/"
+  # Directory to change to before starting a build.
+  # This is where we will look for package.json/.nvmrc/etc.
+  # If not set, defaults to the root directory.
   publish = "dist/"
   command  = "npm run build"
   functions = "functions"
+
 [[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/api.js/:splat"
+  from = "/api/*"
+  # to = "/.netlify/functions/api.js/:splat"
+  to = "/.netlify/functions/:splat"
   status = 200
