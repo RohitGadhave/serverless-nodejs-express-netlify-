@@ -7,7 +7,11 @@ router.get('/1',(req,res)=>{
 
     res.json({"message":"1"});
 });
-router.get('/:id',(req,res)=>{
+router.get('/list',(req,res)=>{
+
+    res.json({"message":"1"});
+});
+router.get('/user/:id',(req,res)=>{
     let id = req.params.id
     //console.log(id)
     res.json({"input":id});
